@@ -7,17 +7,93 @@
 body {
     padding: 6px;
     font-family: Arial, Helvetica, sans-serif;
+    color: #303030;
+    font-size: 14px;
+}
+
+body p, a {
+    line-height: 18px;
+}
+
+.add-radius {
+    border-radius: 6px;
 }
 
 .main-container {
-    max-width: 480px;
+    max-width: 420px;
     margin: 0 auto;
     min-height: 350px;
-    background: #F7F7F7;
-    padding: 8px;
+    background: #FAFAFA;
+    padding: 12px;
 }
 
-form {
-    border: 1px solid cornflowerblue;
+header {
+    /* margin-bottom: 24px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav .user-avatar {
+    color: #79bfd3;
+    font-size: 48px;
+    opacity: .8;
+}
+
+
+
+main .mood-survey, main .user-snapshot {
+    margin-top: 24px;
     padding: 4px;
+}
+
+.user-snapshot {
+    /* background: #D8EDF3; */
+}
+
+.user-snapshot .stats {
+    /*padding: 12px 4px; */
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 6px;
+    column-gap: 6px;
+    justify-content: space-between;
+}
+
+.user-snapshot .stats .card {
+    border: .5px solid #e3e3e3;
+    padding: 12px 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #F7F7F7;
+}
+
+.user-snapshot .stats .card a {
+    text-decoration: none;
+    color: #303030;
+    background: #79bfd3;
+    padding: 8px 12px;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.user-snapshot .stats .submit-more {
+    /* justify-self: center; */
+    grid-column: 1 /span 2;
+    border: none;
+    background: none;
+}
+
+
+
+main .mood-survey {
+    border: 1px solid cornflowerblue;
+}
+
+.mood-survey form {
+    padding: 0px;
 }
